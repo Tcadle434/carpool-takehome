@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useRouter } from "next/router";
 import { InstructionDataType } from "~/lib/types";
 
 interface InstructionTableProps {
@@ -8,7 +7,6 @@ interface InstructionTableProps {
 
 const InstructionTable: React.FC<InstructionTableProps> = ({ data }) => {
   const [expandedRow, setExpandedRow] = useState<number | null>(null);
-  const router = useRouter();
 
   const handleRowClick = (index: number) => {
     setExpandedRow(index === expandedRow ? null : index);

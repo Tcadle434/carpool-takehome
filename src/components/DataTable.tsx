@@ -1,13 +1,9 @@
 import React from "react";
 import { useRouter } from "next/router";
-
-interface Data {
-  treeAuthority: string;
-  transferCount: number;
-}
+import { TransferDataType } from "~/lib/types";
 
 interface DataTableProps {
-  data: Data[];
+  data: TransferDataType[];
 }
 
 const DataTable: React.FC<DataTableProps> = ({ data }) => {

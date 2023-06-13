@@ -15,7 +15,7 @@ const Instruction = (props: {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center  bg-zinc-900 font-mono">
+    <div className="flex min-h-screen flex-col items-center bg-zinc-900 font-mono">
       <div className="container flex flex-col items-center justify-center gap-4 px-4 py-16 ">
         <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-[3rem]">
           Instructions
